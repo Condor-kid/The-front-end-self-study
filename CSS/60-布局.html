@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            width: 150px;
+            height: 200px;
+            border: 10px solid red;
+            list-style: none;
+            float: left;
+            margin-left: -10px;
+        }
+
+        ul li:hover {
+            border: 10px solid blue;
+            position: relative;
+            /* 如果盒子没有定位，就给这个盒子加上相对定位；如果有定位，那么就题高定位的层级 */
+            /* 即z-index的数值变大 */
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>

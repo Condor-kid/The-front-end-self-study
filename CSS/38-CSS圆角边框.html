@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .yuanxing {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* 50%是代表宽度的一半 */
+        }
+
+        .yuanjiaojuxing {
+            background-color: blue;
+            width: 300px;
+            height: 200px;
+            border-radius: 100px;
+            /* 圆角矩形的话，设置为高度的一半 */
+        }
+
+        .different {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px 20px 30px 40px;
+            /* 一个值就是四个角，两个值就是互为对角线，四个值就是左上、右上、右下、左下 */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div class="yuanxing"></div>
+    <div class="yuanjiaojuxing"></div>
+    3.可以设置不同的圆角：
+    <div class="different"></div>
+</body>
+
+</html>

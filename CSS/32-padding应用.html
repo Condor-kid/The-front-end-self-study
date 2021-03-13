@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding应用</title>
+    <style>
+        .nav {
+            height: 41px;
+            background-color: #fcfcfc;
+            border-top: 3px solid #ff8500;
+            border-bottom: 3px solid #edeef0;
+            line-height: 41px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #4c4c4c;
+            font-size: 12px;
+            /* 因为a是行内元素，所以设置height时需要转换 */
+            height: 41px;
+            display: inline-block;
+            padding: 0 20px;
+        }
+
+        .nav a:hover {
+            color: #ff8500;
+            background-color: #eee;
+        }
+
+        h1 {
+            /* width: 100%;如果这么写，那么padding就会扩大盒子得到左右的滚动条 */
+            height: 200px;
+            padding: 30px;
+            color: black;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">新浪导航</a>
+        <a href="#">手机新浪网</a>
+        <a href="#">登录</a>
+        <a href="#">三个字</a>
+    </div>
+    <h1></h1>
+</body>
+
+</html>
