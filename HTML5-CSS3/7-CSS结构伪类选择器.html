@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <style>
+        /* 1、选择ul里面的第一个孩子li */
+        /* ul li:first-child {
+            background-color: pink;
+        }
+
+        ul li:last-child {
+            background-color: yellow;
+        }
+
+        ul li:nth-child(2) {
+            background-color: skyblue;
+        } */
+
+        /* ul li:nth-child(even) {
+            background-color: gray;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: #ccc;
+        } */
+
+        /* 从0开始 每次加1 往后面计算 这里面必须是n 选择了所有的li */
+        ul li:nth-child(n) {
+            background-color: pink;
+        }
+
+        /* nth-child()会把所有盒子都排序号 */
+        /* 执行的时候，先看nth-child(),之后回去看div */
+        section div:nth-child(1) {
+            background-color: red;
+        }
+
+        /* nth-of-type()反过来，先看div指定的元素，再看第几个孩子 */
+        section div:nth-of-type(1) {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ul>
+
+
+    <section>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+</body>
+
+</html>
