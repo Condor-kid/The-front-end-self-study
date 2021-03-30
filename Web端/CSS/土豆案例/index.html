@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tudou {
+            width: 444px;
+            height: 320px;
+            margin: 30px auto;
+            position: relative;
+        }
+
+        .tudou img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mask {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, .3) url(arr.png) no-repeat center;
+            display: none;
+        }
+
+        /* 当我们的鼠标经过了土豆这个盒子时，让遮罩层显露出来 */
+        .tudou:hover .mask {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tudou">
+        <a href="#" class="mask"></a>
+        <img src="tudou.jpg" alt="">
+    </div>
+</body>
+
+</html>
