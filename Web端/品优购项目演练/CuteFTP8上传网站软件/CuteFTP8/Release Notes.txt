@@ -1,0 +1,417 @@
+CuteFTP Home & Professional - Version History
+
+NOTE: CuteFTP Home and Professional were built on the foundation of CuteFTP Pro, the completely redesigned successor to the classic CuteFTP. Therefore, the version history below represents CuteFTP Pro's version history.
+NOTE: Certain features available in the Professional edition only and are disabled in CuteFTP Home.
+
+
+________________
+Changes in 8.0.2
+Corrected Help links not being available in CuteFTP 8 after CuteFTP 7 is uninstalled
+Corrected port collisions that were occuring when CuteFTP was substituting the IP address of the server 
+Corrected "Buy Now" button in FTP 8 would not work after uninstalling FTP 7
+Corrected "Protocol violation" error that was occuring when attempting to connect to a site using HTTP protocol
+Corrected Multi Part Transfers that were hardcoded to 4 connection sets causing transfers to fail whenever multi part was attempted.
+Corrected error where site manager was not being deleted when CuteFTP was uninstalled
+
+
+
+________________
+Changes in 8.0.1
+Corrected live registration prompts that were not being displayed
+Corrected manual registration that was failing with permanent serial keys
+Corrected suspect mode
+Corrected installation problem where installing and uninstalling a new version would cause the old version to error out with an incompatible site manager error
+Corrected "Library not registered" error when attempting to run a script that calls on TE
+
+
+
+________________
+Changes in 8.0.0
+
+Added Podcasting feature
+Improved resume logic in the TE
+Corrected trial period to apply to all users
+Improved script recording
+Changed the "max connections" limit to "max transfers" to allow unlimited connections
+Corrected a problem causing timeout while uploading via SFTP to a Fedora Core 2 Linux server
+Corrected an issue in which enabling server side filtering filters caused the remote pane to stop refreshing
+Improved the performance of lockstep navigation
+Added GZIP compression for Backup Remote Folders
+Corrected an issue in the installer where Google Toolbar was sometimes installed automatically.  The Google Toolbar is now only installed when the user selectes to install it
+Added various refrences to the customer support help page to the registration wizard
+Improved the handling of various conditions that might cause the GUI to lose connection to the TE
+Improved the wording of miscellaneous text messages to improve readability and user friendliness
+Corrected Failure of application to properly close FTP sessions results in socket error on large files
+Added the ability to PGP encrypt and decrypt files - only in FTP Pro
+Added the ability to backup from a local system to a remote host
+Improved the connection wizard to provide a better user experience
+Improved Site Search abilities
+Added Turbo Transfer for FTP Home
+Improved the existing directory comparison feature by using color coding to highlight differences for FTP Pro
+Added Trouble ticket generator
+Improved Bookmark usability
+Added podcasting manager
+Improved usability of log files by including timestamps by default
+Changed "Execute" to "Open" in context menu to make the function more easily understood
+Replacing existing dialogs with step-by-step wizards
+Improved Macro Usability
+Corrected Rename File sorting/highlight issue
+Improved Navigation Pane Tab Visibility
+Improved Mode Z options
+Added Right Click Shell Extension for FTP Pro
+Added "Buy Now" button to trial version
+Improved Localization: Move embedded strings to resource file
+Improved Registration Error Messages
+Improved FTP Error Messages
+Added option to hide "Smart Keep Alive" from the log files
+Improved Time Zone Synchronization
+Added "custom command" event to Transfer Events
+Enabled registration server to record Trial information at registration time
+Added "Exit" button to editor in Home mode
+Added Site Manager Connections to Quick Connect drop-down menu
+Addressed reports of errors during install on Windows Vista Beta
+Addressed reports of errors during install on Windows x64.
+
+________________
+Changes in 7.2.1
+Corrected error where, in some circumstances, attempting to establish the PASV connection could result in continuous retry loop.
+
+
+
+________________
+Changes in 7.2
+Added client-side logic to avoid server errors that resulted in uploaded files with swapped content
+
+
+
+________________
+Changes in 7.1
+Added support for keyboard interactive (KI) authentication
+
+
+
+________________
+Changes in 7.0.2
+Corrected issue with SHIFT+T used in HTML editing mode
+Corrected issue with displaying of ghost folders or files in SFTP connection
+Corrected error when navigating folders in SFTP connection
+Corrected issue so Event settings execute properly
+Corrected display of proxy options
+
+
+________________
+Changes in 7.0.1
+Corrected problem with CHMOD (changing file permisisons) operation failing on remote FTP and SFTP servers.
+Corrected problem with Google Toolbar installation on machines with non-IE as default browser.
+
+________________
+Changes in 7.0.0
+
+Available in CuteFTP Professional version only:
+Added Lockstep Folder Navigation allowing synchronization of same name folders for easier folder navigation
+Added MODE Z Compression Support that provides improved transfer speed through streaming compression of files
+Added Bandwidth Throttling to limit overall transfer speed when sharing resources is required
+Added IPv6 (EPSV/EPRT) Support that provides improved Firewall negotiation for secure connections
+Added Add Transmit and Receive Socket Buffer controls that improve transfers over poor or high latency connections
+Added ability for multiple scheduled Items in queue. Queue can handle more than one sync or folder monitor event
+
+Available in CuteFTP Home and Professional versions:
+Added Thumbnail view that allows viewing of images locally or remotely
+Added ability to modify fonts for different panes
+Added On connect Prompts to inform user of site connection process (CuteFTP Home, and classic view in Pro mode)
+Added CTRL key same session transfer for additional control of same and/or new session logic for concurrent transfers
+Added edit partial screen option to allow edit of remote files in tabbed screen view rather than full-screen
+Added transfer start/finish date/time column in queue to assist with determining file start/stop times
+Added Specify Origin IP and Port Range to help in negotiating NAT devices and firewalls
+Added Automatic Server Port Mapping to help for discovery mapped IP of server as opposed to internal one
+Added Connection wizard toolbar icon shortcut to facilitate launch of Connection Wizard
+Added various Installation enhancements including reduced install size, create shortcut at install time, create “all users”
+Improved auto-connect to last connected sites internal logic to avoid auto-connecting to failed sites
+Improved Startup time (starts as fast as the Classic CuteFTP 2.6)
+Improved Pane location in Pro mode to help users work with similar directory structures when comparing
+Improved Fix queue sorting behavior so finished items are moved to bottom of queue
+Improved Transfer speed reporting adjust display to bits/bytes
+Changed “On startup” behavior so that default event is "Show Site Manager" instead of "Auto-connect to Last Site"
+Changed internal editor default behavior to show editor in partial rather than full screen
+Corrected problem where CuteFTP was incorrectly reporting transfer speeds over time
+Corrected problem with aborted HTTPS transfers not getting stopped
+Corrected runtime error when numerous files were uploaded
+Corrected page file increase problem with large SFTP transfers
+Corrected problem where CuteFTP wouldn't save back to remote when editing using third party editor
+Corrected problem where CuteFTP wouldn't transfer items from multiple sites concurrently
+Corrected various install shield errors (by moving back to install shield 6)
+Corrected various other defects reported by our users (not listed)
+
+________________
+Changes in 6.0.3
+Corrected Runtime error when uploading very large quantity of files
+Corrected issue when transferring over SSH that caused page file to increase dramatically
+
+___________________________
+Changes in 6.0.2 11/03/2004
+Corrected problem with max connections prompt being shown by mistake
+Corrected a help button link in one of the dialogs
+Corrected a problem with drag 'n drop of multiple files within the remote pane resulting in only one file being moved
+Corrected problem with auto-reconnect in a specified time not working
+Installer now upgrades existing install (not asking to repair) or performs complete install
+
+__________________________
+Changes in 6.0.1 5/25/2004
+
+Fixed HTTP PUT command syntax according to RFC 2616
+Fixed toolbar paint problem
+Fixed problem with registering using extended character set
+
+________________________
+Changes in 6.0 3/25/2004
+
+Added SSL v3 (TLS) support
+Added SSL site-to-site (SSCN) transfers
+Added SSL "strong" keys up to 4096 bits
+Added SSL use of windows trusted root CA store
+Added extra password storage, removal, and encryption policies
+Optimized site export to not export passwords in plaintext
+Added optional prompt for SSH2 secret key passwords
+Added host type selections when creating an SSH2 connection
+Added separate connection socket timeout setting
+Added data port range limiter
+Added option to auto-detect windows proxy settings
+Note: This is only available for Windows XP SP1, W2K Pro SP3, W2K Server SP3, W2K Server 2003 using WinHTTP dll. If that fails, WinInet dll is queried, which is supported by XP, 2K PRO, NT4, ME, 98, and 95.
+Added NAT auto-detect (port mapping using UPnP)
+Note: Attempts to use the UPnP NAT interface that is available as a COM object in XP.
+Added option to set the storage location for the Site Manager
+Update the import utility include support for the latest Site Manager files
+Optimized first start routine to auto-detect previous Site Manager(s)
+Added On Startup event to auto-connect to last connected to site
+Optimized add/retrieve bookmark logic (including new bookmark icons in local and remote panes)
+Added new After Transfer events (disconnect, disconnect and close program, shutdown, etc.)
+Added full macro/script recording and playback
+Note: Powerful tool to capture most session functions and properties to a Visual Basic scripting file (.vbs). Once captured, you can edit or play back the file to automate complex sessions.
+Optimized integrated editor to display using full screen mode (switches back to normal view on document close)
+Optimized integration / change awareness of external editors, such as CuteHTML Pro
+Note: CuteFTP will launch a temporary copy of the remote document in the editor and then monitor the file for changes. Once you save your changes in the editor, CuteFTP will uploaded the modified file to your server.
+Optimized application startup time (delay loads most components for faster startup)
+Added auto-complete capability to the local path dropdown box
+Verified compliance with Windows 2003 and IIS 6
+Updated OpenSSL Libraries to version 0.9.7c
+Updated ZLIB Libraries to version 1.2.1
+Added option for folder monitor to auto-detect change
+Note: Auto-polling for changes may fail if the monitored folder is located on a mapped network drive (WinME FAT, Novell, *nix, etc)
+Optimized internal connection retry logic
+Optimized the "use control channel for transfers" option. It is no longer based on size
+Added the ability to reset queue items
+Optimized multi-part transfers so that they auto-adjust down to threads available
+Optimized transfers to UNIX hosts so that they are now case sensitive
+Optimized various editor functions including the ability to save remote documents locally
+Optimized cached data location so that it is now stored in system default application data folder rather than the local application data folder
+Optimized the registration process
+Optimized the overwrite logic, dialogs and prompts
+Separated resources strings for simplified localization
+Note: Check our site in the near future for more details on localization efforts.
+Added the option to ignore zero byte files during an overwrite sequence
+Optimized log auto-scroll restoration based on focus change
+Added long (internal) data types for multi-gigabyte file support
+Optimized internal logic to apply user-initiated changes to connection limits even when during
+Optimized internal logic to gracefully break active transfers (send ABOR prior to breaking the socket)
+Optimized all menus, dialogs, shortcut keys, tooltips and more
+Optimized icons so that high-color versions are now available in non-XP operating systems
+Optimized icons so that both large (24x24) and small (16x16) versions are available
+Corrected many problems and defects reported by our users (not listed)
+
+________________________
+Changes in 3.3 8/26/2003
+
+Corrected file storage location (XP logo related)
+Corrected progress bar which was incorrectly reporting
+Corrected offline browse problem that caused Site Manager to stay open in classic mode
+Corrected a problem where folder monitor, site backup, and SSH2 certificate wizard tools didn't work at all
+Corrected synchronization problem with *nix style listings (client now ignores seconds in timestamp when synchronizing with *nix hosts)
+
+_______________________
+Changes in 3.2 7/1/2003
+
+Added Clear Command Channel (CCC) for SSL connections
+Note: When CCC is enabled, the command channel will be set to "clear-text" just prior to the data channel being established. This helps when connecting to SSL servers through a NAT firewall. Authentication and transfers will still be encrypted, however navigation will not be encrypted once the CCC command is sent. This is in accordance with RFC 2228.
+Added Clear Command Channel property to the TE COM interface (refer to transfer engine help file for details)
+Added support for UNC Pathname support to TE COM interface
+Example: MySite.LocalFolder = "\computernamesharename"
+Added various missing tool tips
+Modified registration to support Time & usage based registration mechanism
+Corrected Smart Keep Alive problem where it wouldn't shut off after 10061 connection failure
+Corrected VAX/VMS File rename problem
+Corrected menu bar item placement problem
+Corrected overwrite dialog width problem
+Corrected link navigation logic
+Corrected various log deletion problems
+Corrected various small GUI inconsistencies
+Corrected problem with repeating line item numbers in queue
+Corrected quick connect problem where it would use the previous path instead of the current one
+Corrected reuse of browser session for transfer problem
+Corrected copy function problem in the integrated editor tool
+Corrected a problem where help topics would incorrectly launch a new window
+
+________________________
+Changes in 3.1 2/10/2003
+
+Added auto-detect PASV/PORT mode option
+Optimized queue grouping so that it is according to status
+Optimized auto-resume logic
+Optimized application startup logic
+Optimized auto-switch to local pane logic so that it only occurs on a successful connect event
+Corrected problem with keep alive reconnect feature not honoring initial path
+Corrected instability problem when transferring thousands of files
+Corrected alignment inconsistencies in transfer queue
+Corrected small menu and other GUI inconsistencies
+Corrected broken save local and save remote path functions
+Corrected problem with toolbar causing the application to crash
+Corrected problem with alphabetical sorting of sites in the Site Manager
+Corrected Novell NetWare 3.12 parsing
+Corrected HP 3000 parsing
+Corrected "Halo" around document icon and other icon issues
+Corrected upload to SSH site using context menus problem
+
+________________________
+Changes in 3.0 11/4/2002
+
+"Designed for Windows XP" Windows XP logo certification
+Many of the "XP Logo - Optimized" requirements met
+Added SSH2 public key authentication
+Added SSH2 RSA/DSA identity file creation
+Added SSH2 remote rename capabilities
+Added ASCII file transfers under SSH2
+Added MAC and CIPHER options for SSH2
+Added OTP (S/Key) auto-detect option added
+Added display of cipher strength in the session log
+Added Site Manager, Quick Connect, and Connect to URL password access policies
+Added New Listing Method to TE COM interface
+Optimized the TE COM interface scripting documentation
+Added New script samples and updated existing ones
+Added a folder monitoring tool
+Added a site backup & archiving tool
+Added server time offset counter options
+Added preserve local time option
+Optimized folder overwrite rule options
+Added save & load queue functionality
+Added move command capability
+Added On Startup events
+Added On Transfer events
+Optimized view folder properties function
+Added restart from byte offset capability
+Added find & find next with wildcard support
+Added select all command support
+Added group select, deselect & invert selection command support
+Added a directory comparison tool
+Added Backup Site and Personal Data Tool
+Added advanced transfer recovery
+Added queue item ordering & manipulation
+Added blank passwords support
+Added resolve links to folder option
+Added more ASCII extensions
+Added new log options
+Added option to "link active remote with last local folder"
+Added 'Queue Finished' transfer sound
+Added XP Style folder sorting in local files pane
+Added ASCII/BIN/AUTO toolbar button
+Added QUIT command option
+Added tolerance options for non-standard FTP servers
+Added new graphics and toolbar icons
+Optimized all menus & dialogs
+Added many new anonymous sites to the Site Manager (and out-of-date sites removed)
+Added additional host types to directory listing parser
+Addressed various usability issues
+(e.g. added "Create new site" option to right-click context menu in blank area of Site Manager pane)
+Optimized various internal functions (queue logic, connection and transfer logic, etc.)
+Optimized internal logic for handling problem servers, such as negative sizes given for files over 2 GB, incorrect replies to certain commands, and more.
+Corrected many problems and defects reported by our users (not listed)
+
+_______________________________________________________________
+Changes in 2.0 (minor release revisions) 12/6/2001 - 12/21/2001
+
+Corrected TE COM Speed and TimeLeft properties for sub-items
+Correct problem with CHMOD when PWD is disabled not working properly
+Optimized MVS directory listing parsing
+Corrected problems with asynchronous methods not returning properly to the script if not enough threads were available
+Corrected SFTP directory listing parsing issues
+Corrected display issue in site import utility
+Corrected LocalFilterExclude property problem when working with folders.
+Note: Use MySite.Option "FilterDirs" = [true(default) / false]
+Corrected truncation of extra long filenames in list view
+Optimized max connections related to reusing same connection logic
+Optimized internal SSH2 parsing code
+Corrected folder synchronization problem, were it would go into an idle state after certain period of time
+Optimized handling of cookies when logging in to https sites
+Optimized further MVS parsing issues for partitioned data sets
+Corrected grayed out customize toolbar function when right-click on custom commands toolbar
+Corrected remove finished queue entries problem when removing nestled items from the queue
+Corrected problem where stop command wouldn't stops deleting of files in progress
+Corrected problem with reconnect not working in Classic mode
+Corrected TE crash condition when running certain scripts
+Corrected TE Log method not working
+Corrected TAR compression path problem fixed
+Corrected column settings problem where it would not remember placement between sessions
+Corrected default pane sizes and remembering pane sizes in Classic mode
+Corrected FTP Proxy custom login error handling problem
+Corrected SFTP (SSH2) caching problems when connecting via a script
+
+_________________________
+Changes in 2.0 11/20/2001
+
+Added "Classic" mode interface option. Switch between standard (pro) and two pane (classic) modes
+Added a separate Site Manager for the classic interface mode
+Added max connections per site option
+Added compression and decompression support for CAB, ZIP, TAR/GZIP formats
+Added custom commands much like those found in classic cuteftp
+Added multi-part upload capability
+Added file integrity (CRC 32 checksum) function (requires GlobalSCAPE's Secure FTP server)
+Added list parsing support for many more host types
+Added Clear Data Channel option for SSL connections
+Added sound options for various events
+Added extended list option for reviewing raw server listings
+Added welcome message dialog option like that in the classic cuteftp
+Added tabs for maximized windows for easier navigation of multiple sites
+Added connection option to retry logins without breaking the connection socket
+Added ability to clear out the session log
+Added ability to toggle the FEAT command request for picky ftp servers
+Added various path and navigation options, use relative and/or absolute, and use physical parent and/or logical when navigating up from visited links
+Added ability to toggle PWD command for navigating remote folders
+Added ability to delete, copy and move multiple items in the Site Manager
+Added option to specify transfer parts in a multi-part transfer request
+Removed first page of Connection Wizard which listed many now defunct ISPs
+Added Import utility can now import site host files previously exported by Pro
+Optimized TE COM functionality. See the comprehensive manual in the program directory
+Optimized various launch, runtime, and transfer optimizations for faster execution.
+Optimized all per site and global connection logic
+Optimized parsing routines for various FTP servers
+Optimized Site Manager to display site host address when mouseover occurs on a site
+Optimized ordering of site import list in the site import utility
+Optimized connection logic to avoid hammering sites
+Fixed many bugs (not listed)
+
+____________________________________
+Changes in 1.0  1/1/2001 - 4/16/2001
+
+April, 2001 - 1.1 patch released (minor bug fixes)
+March 23rd, 2001 - 1.0 final released (1st major version public release)
+March 1st, 2001 - 1.0 build 3.1.1 beta (minor bug fixes)
+February 16th, 2001 - 1.0 build 2.16.1 beta (minor bug fixes)
+February 14th, 2001 - 1.0 build 2.14.1 beta (minor bug fixes)
+February 7th, 2001 - 1.0 build 2.7.1b beta (minor bug fixes)
+January 30th, 2001 - 1.0 build 1.30.1 beta (minor bug fixes)
+January 18th, 2001 - 1.0 initial public beta
+
+
+Contacting GlobalSCAPE:
+
+* For Technical Support or Customer Service please visit the GlobalSCAPE Help Center:
+
+  http://www.globalscape.com/support/
+
+* For Sales:
+
+  http://www.globalscape.com or call 1-210-308-8267 or 1-800-290-5054 (US or CAN)
+
+* All Other:
+
+  http://www.globalscape.com/company/contact.asp
+
+
