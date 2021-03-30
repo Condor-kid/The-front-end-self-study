@@ -1,0 +1,23 @@
+.header {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    &.div {
+        // content: '';
+        height: 100px;
+    }
+    a {
+        color: red;
+        &:hover {
+            color: blue;
+        }
+    }
+}
+.nav {
+    .logo {
+        color:green;
+    }
+    &::before {
+        content: '';
+    }
+}
