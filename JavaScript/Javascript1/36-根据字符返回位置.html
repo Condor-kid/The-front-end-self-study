@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = '改革春风吹满地，春天来了';
+        console.log(str.indexOf('春', str.indexOf('春') + 1));
+        var str = 'abcoefoxyozzopp';
+        var index = str.indexOf('o');
+        while (index !== -1) {
+            console.log(index);
+            index = str.indexOf('o', index + 1);
+        }
+
+        var str = 'andy';
+        console.log(str.charAt(3));
+
+
+        //统计出现最多的字符和次数
+        var str = 'abcoefoxyozzopp';
+        var o = new Object();
+        for (var i = 0; i < str.length; i++) {
+            var chars = str.charAt(i);
+            if (o[chars]) {
+                o[chars]++;
+            }
+            else {
+                o[chars] = 1;
+            }
+        }
+        console.log(o);
+        var max = 0;
+        for (var k in o) {
+            if (o[k] > max) {
+                max = o[k];
+            }
+        }
+        console.log(max);
+        var str1 = '改革春风吹满地';
+        console.log(str1.substr(2, 2));//春风
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

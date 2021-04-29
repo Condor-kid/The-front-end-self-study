@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //预解析
+        // 1、js引擎会把所有的var 和 function 提升到当前作用域的最前面
+        // 2、代码执行，从上往下
+        // 3、预解析：变量预解析（变量提升）和 函数预解析（函数提升）
+        // 4、变量提升 就是把所有的变量声明提升到当前的作用域最前面 不提升赋值操作
+        // 5、函数提升 就是把所有的函数声明提升到当前的最前面 不提升函数表达式，不调用函数
+        fun();
+        var fun = function () {
+            console.log(22);
+        }
+        //相当于执行了下面的代码
+        var fun;
+        fun();
+        fun = function () {
+            console.log(22);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

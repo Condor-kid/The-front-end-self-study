@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var num = 10;
+        // fun();
+        // function fun() {
+        //     console.log(num);
+        //     var num = 20;
+        // }
+
+        //相当于执行以下操作
+        var num;
+        function fun() {
+            var num;
+            console.log(num);
+            num = 20;
+        }
+        num = 10;
+        fun();
+
+
+        // var num = 10;
+        // function fn() {
+        //     console.log(num);
+        //     var num = 20;
+        //     console.log(num);
+        // }
+        // fn();
+
+        //相当于执行以下操作
+        var num;
+        function fn() {
+            var num;
+            console.log(num);
+            num = 20;
+            console.log(num);
+        }
+        num = 10;
+        fn();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
