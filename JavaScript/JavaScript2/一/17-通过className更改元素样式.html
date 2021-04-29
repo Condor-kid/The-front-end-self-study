@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            width: 200px;
+            height: 200px;
+            color: black;
+            background-color: pink;
+        }
+
+        .change {
+            background-color: purple;
+            width: 300px;
+            height: 300px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">文本</div>
+    <script>
+        var div = document.querySelector('div');
+        div.onclick = function () {
+            this.className = 'change';
+            // this.className = 'first change';
+        }
+    </script>
+</body>
+
+</html>

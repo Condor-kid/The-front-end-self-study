@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>按钮</button>
+    <input type="text" value="输入内容">
+    <script>
+        var btn = document.querySelector('button');
+        var input = document.querySelector('input');
+        btn.onclick = function () {
+            // input.innerHTML = '点击了';   这个是普通盒子（如div）里面的内容
+            input.value = '被点击了';
+            // btn.disabled = true;
+            this.disabled = true;
+            // this指向的是事件函数的调用者（即btn）
+        }
+    </script>
+</body>
+
+</html>

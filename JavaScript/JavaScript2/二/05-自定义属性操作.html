@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo" index="1" class="nav"></div>
+    <script>
+        var demo = document.getElementById('demo');
+        console.log(demo.id);
+        console.log(demo.getAttribute('id'));
+        console.log(demo.getAttribute('index'));
+
+        demo.id = 'test';
+        console.log(demo.getAttribute('id'));
+        //element.setAttribute('属性','值');
+        demo.setAttribute('index', 2);
+        console.log(demo.getAttribute('index'));
+        demo.className = 'navs';
+        demo.setAttribute('class', 'navsss');
+        demo.removeAttribute('index');
+    </script>
+</body>
+
+</html>

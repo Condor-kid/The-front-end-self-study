@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>传统注册事件</button>
+    <button>方法监听注册事件</button>
+    <button>ie9 attachEvent</button>
+    <script>
+        var btns = document.querySelectorAll('button');
+        btns[0].onclick = function () {
+            alert('hi');
+        }
+        btns[0].onclick = function () {
+            alert('hello');
+        }
+        //利用事件侦听注册事件
+        btns[1].addEventListener('click', function () {
+            alert(22);
+        })
+        btns[1].addEventListener('click', function () {
+            alert(33);
+        })
+        //ie9以下的
+        btns[2].attachEvent('onclick', function () {
+            alert(2222);
+        })
+    </script>
+</body>
+
+</html>

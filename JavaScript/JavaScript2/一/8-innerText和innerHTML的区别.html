@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div></div>
+    <p>
+        我是文字
+        <span>123</span>
+    </p>
+    <script>
+        //这两个属性是可读写的
+        var div = document.querySelector('div');
+        div.innerText = '<strong>今天是</strong>：2021-3-29';//不识别HTML标签
+        div.innerHTML = '<strong>今天是</strong>：2021-3-29';//识别HTML标签
+        var p = document.querySelector('p');
+        console.log(p.innerText);
+        console.log(p.innerHTML);//保留空格和换行
+    </script>
+</body>
+
+</html>

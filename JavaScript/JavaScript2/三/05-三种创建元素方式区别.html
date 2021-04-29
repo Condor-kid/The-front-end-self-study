@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>点击</button>
+    <p>abc</p>
+    <div class="inner"></div>
+    <div class="create"></div>
+    <script>
+        // window.onload = function () {
+        //     document.write('<div>123</div>');
+        // }
+        // var btn = document.querySelector('button');
+        // btn.onclick = function () {
+        //     document.write('<div>123</div>');
+        // }
+        var inner = document.querySelector('.inner');
+        var arr = [];
+        for (var i = 0; i < 100; i++) {
+            arr.push('<a href="#">百度</a>');
+        }
+        inner.innerHTML = arr.join('');
+        // var inner = document.querySelector('.inner');
+        // inner.innerHTML = "<a href='#'>百度</a>";
+        // var create = document.querySelector('.create');
+        // var a = document.createElement('a');
+        // create.appendChild(a);
+    </script>
+</body>
+
+</html>
