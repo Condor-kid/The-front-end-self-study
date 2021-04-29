@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var rg = /abc/;//正则表达式里面不需要加引号
+        //  /abc/只要包含有abc这个字符串返回都是true
+        console.log(rg.test('abc'));
+        console.log(rg.test('abcd'));
+        console.log(rg.test('aabc'));
+        console.log('--------------------------------');
+        var reg = /^abc/;
+        console.log(reg.test('abc'));//true
+        console.log(reg.test('abcd'));//true
+        console.log(reg.test('aabcd'));//false
+        console.log('--------------------------------');
+        var reg1 = /^abc$/;  //  精确匹配，要求必须是abc这个字符串
+        console.log(reg1.test('abc'));
+        console.log(reg1.test('abcd'));
+        console.log(reg1.test('aabc'));
+        console.log(reg1.test('abcabc'));
+    </script>
+</body>
+
+</html>

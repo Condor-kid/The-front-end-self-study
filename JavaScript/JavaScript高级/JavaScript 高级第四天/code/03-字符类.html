@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //var rg = /abc/;  只要包含abc就可以 
+        // 字符类: [] 表示有一系列字符可供选择，只要匹配其中一个就可以了
+        var rg = /[abc]/;//只要包含有a/b/c，就返回true
+        console.log(rg.test('andy'));
+        console.log(rg.test('baby'));
+        console.log(rg.test('color'));
+        console.log(rg.test('red'));
+        console.log('--------------------------------');
+        var rg1 = /^[abc]$/; //abc三选一,且只能有一个
+        console.log(rg1.test('aa'));//false
+        console.log(rg1.test('a'));//true
+        console.log(rg1.test('b'));//true
+        console.log(rg1.test('abc'));//false
+        console.log('--------------------------------');
+        var rg2 = /^[a-z]$/;//26个字母随便一个且仅一个
+        console.log(rg2.test('a'));
+        console.log(rg2.test('A'));//false
+        console.log('--------------------------------');
+        //字符组合
+        var rg3 = /^[a-zA-Z0-9_-]$/;
+        console.log(rg3.test('A'));//true
+        console.log(rg3.test(9));
+        console.log(rg3.test('!'));//false
+        //如果中括号里面有^，表示取反的意思，不要和边界符混淆
+        var regt = /^[^a-z0-9A-Z_-]$/;
+        console.log('--------------------------------');
+        console.log(regt.test('A'));//false
+        console.log(regt.test(9));
+        console.log(regt.test('!'));//true
+    </script>
+</body>
+
+</html>
